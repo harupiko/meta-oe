@@ -1,15 +1,15 @@
 SUMMARY = "nodeJS Evented I/O for V8 JavaScript"
 HOMEPAGE = "http://nodejs.org"
-LICENSE = "MIT & BSD"
-LIC_FILES_CHKSUM = "file://LICENSE;md5=95a589a3257ab7dfe37d8a8379e3c72d"
+LICENSE = "MIT & BSD & Artistic-2.0 & Apache-2.0"
+LIC_FILES_CHKSUM = "file://LICENSE;md5=4a31e6c424761191227143b86f58a1ef"
 
 DEPENDS = "openssl"
 
 SRC_URI = "http://nodejs.org/dist/v${PV}/node-v${PV}.tar.gz \
-           file://0001-gcc-has-a-builtin-define-to-denote-hard-abi-when-in-.patch \
-"
-SRC_URI[md5sum] = "25ed6aa5710ac46b867ff3f17a4da1d6"
-SRC_URI[sha256sum] = "1d63dd42f9bd22f087585ddf80a881c6acbe1664891b1dda3b71306fe9ae00f9"
+           file://0001-Regenerating-Khem-s-patch-for-assembler-arm.cc.patch"
+
+SRC_URI[md5sum] = "153bdbf77b4473df2600b8ce123ef331"
+SRC_URI[sha256sum] = "46eef3b9d5475a2081dc2b2f7cf1f4c3a56824d1fc9b04e7ed1d7a88e8f6b36f"
 
 S = "${WORKDIR}/node-v${PV}"
 
